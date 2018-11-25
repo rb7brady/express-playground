@@ -7,6 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var companyRouter = require('./routes/company');
+var companiesRouter = require('./routes/companies');
+const cors = require('cors');
 
 var app = express();
 
@@ -23,7 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/company', companyRouter);
+app.use('/companies', companiesRouter);
 
+app.use(cors({
+    origin: ['http://localhost:4200'],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'x-access-token', 'XSRF-TOKEN'],
+    preflightContinue: false
+}));
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
