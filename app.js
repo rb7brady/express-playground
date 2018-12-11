@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var companyRouter = require('./routes/company');
 var companiesRouter = require('./routes/companies');
+var iexRouter = require('./routes/iex');
+var iexPublicRouter = require('./routes/publicAPI/iex/company');
+var modRouter = require('./routes/modularTest');
 const cors = require('cors');
 
 var app = express();
@@ -26,7 +29,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/company', companyRouter);
 app.use('/companies', companiesRouter);
-
+app.use('/iex/company', iexRouter);
+app.use('/publicAPI/iex/company', iexPublicRouter);
+app.use('/mod', modRouter);
 app.use(cors({
     origin: ['http://localhost:4200'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',

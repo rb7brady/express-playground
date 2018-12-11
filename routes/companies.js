@@ -17,7 +17,12 @@ router.get('/all', function(req, res, next) {
     console.log("fullQuery: " + fullQuery);
 
     connection.query(fullQuery, function (error, results, fields) {
-        if (error) throw error;
+        if (error) {console.log(error);}
+        //if (!error) {console.log('Query returned ' + results.length + 'rows.');}
+        //if (fields) {console.log(fields);}
+        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        res.setHeader('Access-Control-Allow-Origin', '*');
         console.log('The solution is: ', results[0].name);
         res.send(results);
     });
