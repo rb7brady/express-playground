@@ -1,14 +1,20 @@
-var mysql      = require('mysql');
-
-var connection = mysql.createConnection({
-    host:"rtdb002.cppjlghnvwmg.us-east-2.rds.amazonaws.com",
-    user:"rtdb",
-    password:"Riptide99!",
-    database:"rtdb"
-});
-
-
-function helloWorldRtdb() {
-    return "RTDB Hello World";
-}
-module.exports = helloWorldRtdb();
+var pool = require('./rtdbConnector');
+exports.getPosts=function(callback){
+    pool.getConnection(function(err,connection){
+        if (err) {
+            callback(true);
+            return;
+        }
+        connection.query(query,function(err,results){
+            connection.release();
+            if(!err) {
+                callback(false, {rows: results});
+            }
+            // check null for results here
+        });
+        connection.on('error', function(err) {
+            callback(true);
+            return;
+        });
+    });
+};

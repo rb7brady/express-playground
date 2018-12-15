@@ -9,6 +9,7 @@
     "body-parser": "latest",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
+    "credentials": "^3.0.2",
     "debug": "~2.6.9",
     "ejs": "^2.6.1",
     "express": "^4.16.4",

@@ -10,7 +10,9 @@ var companyRouter = require('./routes/company');
 var companiesRouter = require('./routes/companies');
 var iexRouter = require('./routes/iex');
 var iexPublicRouter = require('./routes/publicAPI/iex/company');
+var rhPublicRouter = require('./routes/publicAPI/rh/rh');
 var modRouter = require('./routes/modularTest');
+var riptideRouter = require('./routes/riptide/riptideRouter');
 const cors = require('cors');
 
 var app = express();
@@ -26,12 +28,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter);
 app.use('/company', companyRouter);
 app.use('/companies', companiesRouter);
 app.use('/iex/company', iexRouter);
 app.use('/publicAPI/iex/company', iexPublicRouter);
+app.use('/publicAPI/rh/rh', rhPublicRouter);
 app.use('/mod', modRouter);
+app.use('/rt',riptideRouter);
 app.use(cors({
     origin: ['http://localhost:4200'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
