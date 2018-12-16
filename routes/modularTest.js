@@ -89,7 +89,6 @@ function iexTest(req, res) {
                 if (error) {
                     console.log(error);
                 }
-
             });
         }
     });

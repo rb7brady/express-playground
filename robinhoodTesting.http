@@ -4,3 +4,16 @@
 # * 'gtrp' and 'gtr' create a GET request with or without query parameters;
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST https://api.robinhood.com/oauth2/token/
+Accept: */*
+Cache-Control: no-cache
+
+{"grant_type":"password", 	 "client_id":"c82SH0WZOsabOXGP2sxqcj34FxkvfnWRZBKlBjFS", "username":"rb7brady@gmail.com", "password":"@92Hatbf1234" }
+
+<> 2018-12-15T030930.200.json
+
+###
+GET https://api.robinhood.com/
+
+###

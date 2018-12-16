@@ -1,0 +1,9 @@
+{
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE1NDQ5OTQ1NzIsInRva2VuIjoiUnFhdWlnZ3hpemFSbmNlQnNRcHhoMXlpeVRrZ3lPIiwidXNlcl9pZCI6ImNhMzJlZmJmLWEzNjgtNDg3Ny1iNDBhLTZiMDg4ZTNhMzA3ZSIsIm9wdGlvbnMiOnRydWV9.OfFB5Wm7mRtptW5RnndJmDVIo0HCkxOw_yNHgzLhzuGfj1WD1ABFTyOqwyLro-AnaGzADjp_rw-wK4mTnDAufZ8QQWXSEFiPjff8aKphnTZvdSUEIIGKd9FphKtkAZqI4lHyROrZZ9q62vyN1JreWsYphM4cXGtNtPu0G_syAtz5tPXBrXvecX1hkZ93eyBcjhDmKdvx0FQPnX1lUTD9ccK5ufe1u3zYC0daj1dOlDNNTMV-hg-9vBnTZCAL9UvR-dEAryiBv59THoOR-qbGDmAsJYk6ds-8lzfKU62jWcXheyxcgdE69mIcXc9qJILkTWMCsNxqUHJr1qHlJ1FiEw",
+  "expires_in": 86400,
+  "token_type": "Bearer",
+  "scope": "acats balances document_upload edocs funding:all:read funding:ach:read funding:ach:write funding:wire:read funding:wire:write internal investments margin read signup trade watchlist web_limited",
+  "refresh_token": "0YiCNddTb82i2tvwUfDO1SG0xvUzpF",
+  "mfa_code": null,
+  "backup_code": null
+}

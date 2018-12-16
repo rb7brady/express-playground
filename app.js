@@ -10,9 +10,13 @@ var companyRouter = require('./routes/company');
 var companiesRouter = require('./routes/companies');
 var iexRouter = require('./routes/iex');
 var iexPublicRouter = require('./routes/publicAPI/iex/company');
-var rhPublicRouter = require('./routes/publicAPI/rh/rh');
+//var rhPublicRouter = require('./routes/publicAPI/rh/orders');
+
 var modRouter = require('./routes/modularTest');
 var riptideRouter = require('./routes/riptide/riptideRouter');
+var rhExpressRouter = require('./routes/publicAPI/rh/authExpress');
+var ordersRoute = require('./routes/publicAPI/rh/orders');
+
 const cors = require('cors');
 
 var app = express();
@@ -33,15 +37,20 @@ app.use('/company', companyRouter);
 app.use('/companies', companiesRouter);
 app.use('/iex/company', iexRouter);
 app.use('/publicAPI/iex/company', iexPublicRouter);
-app.use('/publicAPI/rh/rh', rhPublicRouter);
+//app.use('/publicAPI/rh/rh', rhPublicRouter);
+app.use('/publicAPI/rh/orders', ordersRoute);
+//app.use('/publicAPI/rh/authenticate', rhAuthRouter);
+app.use('/publicAPI/rh/authExpress', rhExpressRouter);
+
 app.use('/mod', modRouter);
 app.use('/rt',riptideRouter);
 app.use(cors({
     origin: ['http://localhost:4200'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'x-access-token', 'XSRF-TOKEN'],
+    allowedHeaders: '*',
     preflightContinue: false
 }));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));

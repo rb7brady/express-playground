@@ -9,6 +9,7 @@ var options = {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
+
     }
 };
 router.get('/search', function(req, res, next) {
