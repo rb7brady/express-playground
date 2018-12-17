@@ -12,7 +12,7 @@ var mysql      = require('mysql');
 router.get('/orders', function(req, res, next) {
     console.log('Entering Orders');
     const connection = mysql.createConnection(Connections.getRtdbConfig());
-    let myAccount = new Account('rb7brady@gmail.com', '@92Hatbf1234');
+    let myAccount = new Account('rb7brady@gmail.com', '');
     connection.connect();
     connection.query('select * from account where username like \"' + myAccount.username + '\"', function (error, results) {
         if (results.length > 0) {

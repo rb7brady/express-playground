@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd95c5ed-8e52-4b50-ae53-0533919318db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_helpers/sqlUtil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_models/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/_models/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" beforeDir="false" afterPath="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/company.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="621">
               <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="27" />
             </state>
           </provider>
@@ -44,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_models/Connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="368">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -58,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_models/Order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+            <state relative-caret-position="-230">
+              <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -67,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -155,15 +151,15 @@
         <option value="$PROJECT_DIR$/_models/options.js" />
         <option value="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" />
         <option value="$PROJECT_DIR$/_helpers.js" />
-        <option value="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" />
         <option value="$PROJECT_DIR$/_helpers/sqlUtil.js" />
-        <option value="$PROJECT_DIR$/_models/Order.js" />
         <option value="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" />
+        <option value="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" />
+        <option value="$PROJECT_DIR$/_models/Order.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -333,12 +329,12 @@
       <workItem from="1543016922253" duration="1258000" />
       <workItem from="1543018197292" duration="20763000" />
       <workItem from="1543772642794" duration="45280000" />
-      <workItem from="1544747989669" duration="54203000" />
+      <workItem from="1544747989669" duration="55285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121504000" />
+    <option name="totallyTimeSpent" value="122586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,7 +346,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" weight="0.17217484" />
@@ -360,7 +356,7 @@
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.42873564" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.06387921" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.06387921" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39885056" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -369,7 +365,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329849" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.46666667" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.28275862" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -602,19 +598,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/testQUery">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_models/options.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_models/Connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="368">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/company.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="621">
           <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
@@ -628,25 +634,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/testQUery">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_models/Order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+        <state relative-caret-position="-230">
+          <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="32" />
         </state>
       </provider>
     </entry>

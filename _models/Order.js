@@ -157,7 +157,6 @@ class Order {
         }
         values += ' ) ';
         columns += ' ) ';
-        console.log(query + columns+ values );
         return query + columns+ values;
     }
 }

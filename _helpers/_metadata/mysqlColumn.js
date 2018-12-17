@@ -7,12 +7,4 @@ class mysqlColumn {
         this.scale = scale;
     }
 }
-function test() {
-
-}
-
-var mysqlDef = {
-    test:"TEST"
-}
-
 module.exports = mysqlColumn;
