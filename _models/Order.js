@@ -22,6 +22,9 @@ class Order {
     setState(s) {
         this.state = s;
     }
+    setSide(s) {
+        this.side = s;
+    }
     setType(t) {
         this.type = t;
     }
@@ -34,20 +37,25 @@ class Order {
     setCumulativeQuantity(c) {
         this.cumulativeQuantity = c;
     }
+    setRHID(r) {
+        this.RHID = r;
+    }
 
     getInsertQuery() {
-        return 'INSERT INTO order_robinhood (symbol,instrument,_state,_type,reject_reason,response_category,quantity,price,cumulative_quantity,created_at,updated_at) values ('
+        return 'INSERT INTO order_robinhood (symbol,instrument,_state,_type,reject_reason,response_category,side,quantity,price,cumulative_quantity,created_at,updated_at,rh_id_bin) values ('
             + Order.appendStringValue(this.symbol)+','
             + Order.appendStringValue(this.instrument)+','
             + Order.appendStringValue(this.state)+','
             + Order.appendStringValue(this.type)+','
             + Order.appendStringValue(this.rejectReason)+','
             + Order.appendStringValue(this.responseCategory)+','
+            + Order.appendStringValue(this.side)+','
             + this.quantity+','
             + this.price+','
             + this.cumulativeQuantity+','
             + Order.appendStringValue(this.createdAt)+','
-            + Order.appendStringValue(this.updatedAt)
+            + Order.appendStringValue(this.updatedAt)+','
+            + 'unhex(replace(\"'+this.RHID+'\",\"-\",\"\"))'
             + ')';
     }
 
