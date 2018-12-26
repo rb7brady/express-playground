@@ -16,7 +16,7 @@ var modRouter = require('./routes/modularTest');
 var riptideRouter = require('./routes/riptide/riptideRouter');
 var rhExpressRouter = require('./routes/publicAPI/rh/authExpress');
 var ordersRoute = require('./routes/publicAPI/rh/orders');
-
+var ordersOptionsRoute = require('./routes/publicAPI/rh/ordersOptions')
 const cors = require('cors');
 
 var app = express();
@@ -39,6 +39,8 @@ app.use('/iex/company', iexRouter);
 app.use('/publicAPI/iex/company', iexPublicRouter);
 //app.use('/publicAPI/rh/rh', rhPublicRouter);
 app.use('/publicAPI/rh/orders', ordersRoute);
+app.use('/publicAPI/rh/ordersOptions', ordersOptionsRoute);
+
 //app.use('/publicAPI/rh/authenticate', rhAuthRouter);
 app.use('/publicAPI/rh/authExpress', rhExpressRouter);
 

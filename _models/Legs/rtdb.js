@@ -1,5 +1,5 @@
-const sqlUtil = require('../_helpers/sqlUtil');
-const mysqlColumn = require('../_helpers/_metadata/mysqlColumn');
+const sqlUtil = require('../../_helpers/sqlUtil');
+const mysqlColumn = require('../../_helpers/_metadata/mysqlColumn');
 class Leg {
     setId(value){
         this.id=
@@ -7,43 +7,43 @@ class Leg {
                 value:value,
                 meta: new mysqlColumn("id","int","NULL","10","0")
             }
-    }                                               
- setOption(value){
+    }
+    setOption(value){
         this._option=
             {
                 value:value,
                 meta: new mysqlColumn("_option","varchar","255","NULL","NULL")
             }
-    }                         
- setSide(value){
+    }
+    setSide(value){
         this.side=
             {
                 value:value,
                 meta: new mysqlColumn("side","varchar","25","NULL","NULL")
             }
-    }                                  
- setPosition_effect(value){
+    }
+    setPosition_effect(value){
         this.position_effect=
             {
                 value:value,
                 meta: new mysqlColumn("position_effect","varchar","25","NULL","NULL")
             }
-    } 
- setRh_id(value){
+    }
+    setRh_id(value){
         this.rh_id=
             {
                 value:value,
                 meta: new mysqlColumn("rh_id","varchar","36","NULL","NULL")
             }
-    }                               
- setOoid(value){
+    }
+    setOoid(value){
         this.ooid=
             {
                 value:value,
                 meta: new mysqlColumn("ooid","varchar","36","NULL","NULL")
             }
-    }                                  
- setRatio_quantity(value){
+    }
+    setRatio_quantity(value){
         this.ratio_quantity=
             {
                 value:value,

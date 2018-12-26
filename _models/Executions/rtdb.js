@@ -1,32 +1,32 @@
-const sqlUtil = require('../_helpers/sqlUtil');
-const mysqlColumn = require('../_helpers/_metadata/mysqlColumn');
-class Leg {
+const sqlUtil = require('../../_helpers/sqlUtil');
+const mysqlColumn = require('../../_helpers/_metadata/mysqlColumn');
+class Execution {
     setId(value){
         this.id=
             {
                 value:value,
                 meta: new mysqlColumn("id","int","NULL","10","0")
             }
-    }                                               
- setOption(value){
-        this._option=
+    }                                              
+ setTimestamp(value){
+        this._timestamp=
             {
                 value:value,
-                meta: new mysqlColumn("_option","varchar","255","NULL","NULL")
+                meta: new mysqlColumn("_timestamp","timestamp","NULL","NULL","NULL")
             }
-    }                         
- setSide(value){
-        this.side=
+    }            
+ setPrice(value){
+        this.price=
             {
                 value:value,
-                meta: new mysqlColumn("side","varchar","25","NULL","NULL")
+                meta: new mysqlColumn("price","double","NULL","22","NULL")
             }
-    }                                  
- setPosition_effect(value){
-        this.position_effect=
+    }                               
+ setSettlement_date(value){
+        this.settlement_date=
             {
                 value:value,
-                meta: new mysqlColumn("position_effect","varchar","25","NULL","NULL")
+                meta: new mysqlColumn("settlement_date","date","NULL","NULL","NULL")
             }
     } 
  setRh_id(value){
@@ -35,24 +35,31 @@ class Leg {
                 value:value,
                 meta: new mysqlColumn("rh_id","varchar","36","NULL","NULL")
             }
-    }                               
- setOoid(value){
-        this.ooid=
+    }                              
+ setLeg_id(value){
+        this.leg_id=
             {
                 value:value,
-                meta: new mysqlColumn("ooid","varchar","36","NULL","NULL")
+                meta: new mysqlColumn("leg_id","varchar","36","NULL","NULL")
             }
-    }                                  
- setRatio_quantity(value){
-        this.ratio_quantity=
+    }                           
+ setQuantity(value){
+        this.quantity=
             {
                 value:value,
-                meta: new mysqlColumn("ratio_quantity","decimal","NULL","10","0")
+                meta: new mysqlColumn("quantity","double","NULL","22","NULL")
+            }
+    }                      
+ setSource(value){
+        this.source=
+            {
+                value:value,
+                meta: new mysqlColumn("source","int","NULL","10","0")
             }
     }
 
     buildInsertQuery() {
-        var query = 'INSERT INTO leg ';
+        var query = 'INSERT INTO execution ';
         var values = 'VALUES (';
         var columns = '(';
         var i = 0;
@@ -76,4 +83,4 @@ class Leg {
         return query + columns+ values;
     }
 }
-module.exports = Leg;
+module.exports = Execution;

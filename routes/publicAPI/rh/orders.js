@@ -1,6 +1,5 @@
-
 var Account = require('../../../_models/Account');
-var Order = require('../../../_models/Order');
+var OrderConverter = require('../../../_models/Orders/converter');
 
 var Connections = require('../../../_models/Connection');
 var express = require('express');
@@ -37,20 +36,7 @@ function queryOrdersPage(url,options,connection) {
             let orders = JSON.parse(body);
             if (orders.results) {
                 for (i = 0; i < orders.results.length; i++) { //loop through order page.
-                    let myOrder = new Order();
-                    myOrder.setPrice(orders.results[i].price);
-                    myOrder.setCreated_at(orders.results[i].created_at);
-                    myOrder.setUpdated_at(orders.results[i].updated_at);
-                    myOrder.setCumulative_quantity(orders.results[i].cumulative_quantity);
-                    myOrder.setInstrument(orders.results[i].instrument);
-                    myOrder.setReject_reason(orders.results[i].reject_reason);
-                    myOrder.setQuantity(orders.results[i].quantity);
-                    myOrder.setResponse_category(orders.results[i].response_category);
-                    myOrder.setType(orders.results[i].type);
-                    myOrder.setState(orders.results[i].state);
-                    myOrder.setSide(orders.results[i].side);
-                    myOrder.setRh_id_bin(orders.results[i].id);
-
+                    let myOrder = OrderConverter(orders.results[i]);
                     request(orders.results[i].instrument, options, function (error, response, body) {//fetch instrument data.
                         if (!error) {
                             let json = JSON.parse(body);

@@ -1,15 +1,15 @@
-const sqlUtil = require('../_helpers/sqlUtil');
-const mysqlColumn = require('../_helpers/_metadata/mysqlColumn');
+const sqlUtil = require('../../_helpers/sqlUtil');
+const mysqlColumn = require('../../_helpers/_metadata/mysqlColumn');
 
 class OrderOption
 {
-    // setId(value){
-    //     this.id=
-    //         {
-    //             value:value,
-    //             meta: new mysqlColumn("id","int","NULL","10","0")
-    //         }
-    // }
+    setId(value){
+        this.id=
+            {
+                value:value,
+                meta: new mysqlColumn("id","int","NULL","10","0")
+            }
+    }
     setAccount_id(value)
     {
         this.account_id =
@@ -232,34 +232,4 @@ class OrderOption
 
 }
 
-class Converter {
-    static convertToDb(result) {
-        let myOrder = new OrderOption;
-        myOrder.setPrice(result.price);
-        myOrder.setCreated_at(result.created_at);
-        myOrder.setUpdated_at(result.updated_at);
-        myOrder.setQuantity(result.quantity);
-        myOrder.setResponse_category(result.response_category);
-        myOrder.setType(result.type);
-        myOrder.setDirection(result.direction);
-        myOrder.setState(result.state);
-        myOrder.setCanceled_quantity(result.canceled_quantity);
-        myOrder.setPremium(result.premium);
-        myOrder.setPending_quantity(result.pending_quantity);
-        myOrder.setProcessed_quantity(result.processed_quantity);
-        myOrder.setClosing_strategy(result.closing_strategy);
-        myOrder.setProcessed_premium(result.processed_premium);
-        myOrder.setCanceled_quantity(result.canceled_quantity);
-        myOrder.setCanceled_quantity(result.canceled_quantity);
-        myOrder.setCanceled_quantity(result.canceled_quantity);
-        myOrder.setCanceled_quantity(result.canceled_quantity);
-        myOrder.setChain_id(result.chain_id);
-        myOrder.setSymbol(result.chain_symbol);
-        myOrder.setRef_id(result.ref_id);
-        return myOrder;
-    }
-}
-
-
-module.exports = [OrderOption, Converter];
-//module.exports = convertToDb()
+module.exports = OrderOption;

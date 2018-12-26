@@ -27,7 +27,7 @@ router.get('/login', function(req, res, next) {
         }
     };
 
-    let myAccount = new Account('rb7brady@gmail.com', '@92Hatbf1234');
+    let myAccount = new Account('rb7brady@gmail.com', '');
 
     request('https://api.robinhood.com/oauth2/token/',options, function (error, response, body) {
 
