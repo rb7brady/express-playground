@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd95c5ed-8e52-4b50-ae53-0533919318db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_helpers/_converters/OptionOrder/optionOrder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Executions/converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Executions/rtdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Legs/converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Legs/rtdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/OptionOrders/converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Orders/converter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_models/Orders/rtdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_models/Dividends/converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_models/Dividends/rtdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/publicAPI/iex/dividends.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_models/Leg.js" beforeDir="false" afterPath="$PROJECT_DIR$/_models/Leg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_models/OrderOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/_models/OrderOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_models/OptionOrders/converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/_models/OptionOrders/converter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" beforeDir="false" afterPath="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/companies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,53 +30,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/OptionOrders/rtdb.js">
+        <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/company.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/Orders/rtdb.js">
+        <entry file="file://$PROJECT_DIR$/routes/companies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/dividends.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
+        <entry file="file://$PROJECT_DIR$/_models/Dividends/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="75">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/leg.js">
+        <entry file="file://$PROJECT_DIR$/_models/Dividends/rtdb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/OptionOrders/converter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            <state relative-caret-position="810">
+              <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -90,35 +84,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_models/Executions/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="285">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/Executions/rtdb.js">
+        <entry file="file://$PROJECT_DIR$/_models/OptionOrders/rtdb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+            <state relative-caret-position="3180">
+              <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/Legs/converter.js">
+        <entry file="file://$PROJECT_DIR$/_models/OptionOrders/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="585">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_models/Legs/rtdb.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/modularTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="8" column="39" selection-start-line="8" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -166,7 +160,6 @@
         <option value="$PROJECT_DIR$/services/db/rtdbConnector.js" />
         <option value="$PROJECT_DIR$/services/db/lookup.js" />
         <option value="$PROJECT_DIR$/routes/riptide/riptideRouter.js" />
-        <option value="$PROJECT_DIR$/routes/companies.js" />
         <option value="$PROJECT_DIR$/services/rest/rh.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" />
         <option value="$PROJECT_DIR$/robinhoodTesting.http" />
@@ -178,33 +171,36 @@
         <option value="$PROJECT_DIR$/_models/Account.js" />
         <option value="$PROJECT_DIR$/_models/Connection.js" />
         <option value="$PROJECT_DIR$/_models/options.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" />
         <option value="$PROJECT_DIR$/_helpers.js" />
         <option value="$PROJECT_DIR$/_helpers/sqlUtil.js" />
         <option value="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" />
         <option value="$PROJECT_DIR$/_models/Order.js" />
         <option value="$PROJECT_DIR$/routes/publicAPI/rh/leg.js" />
         <option value="$PROJECT_DIR$/_models/Leg.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/_models/OrderOption.js" />
         <option value="$PROJECT_DIR$/_models/OptionOrders/converter" />
         <option value="$PROJECT_DIR$/_models/Legs/rtdb.js" />
         <option value="$PROJECT_DIR$/_models/Orders/rtdb.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" />
         <option value="$PROJECT_DIR$/_models/Orders/converter.js" />
-        <option value="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" />
         <option value="$PROJECT_DIR$/_models/Executions/rtdb.js" />
-        <option value="$PROJECT_DIR$/_models/OptionOrders/converter.js" />
         <option value="$PROJECT_DIR$/_models/Executions/converter.js" />
         <option value="$PROJECT_DIR$/_models/Legs/converter.js" />
+        <option value="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" />
+        <option value="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" />
+        <option value="$PROJECT_DIR$/_models/OptionOrders/converter.js" />
+        <option value="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" />
+        <option value="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/_models/Dividends/converter.js" />
+        <option value="$PROJECT_DIR$/_models/Dividends/rtdb.js" />
+        <option value="$PROJECT_DIR$/routes/companies.js" />
+        <option value="$PROJECT_DIR$/routes/publicAPI/iex/dividends.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,29 +243,6 @@
             <path>
               <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
               <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_models" type="462c0819:PsiDirectoryNode" />
-              <item name="Executions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_models" type="462c0819:PsiDirectoryNode" />
-              <item name="Legs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_models" type="462c0819:PsiDirectoryNode" />
-              <item name="OptionOrders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,6 +250,13 @@
               <item name="express-playground" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
               <item name="publicAPI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="publicAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="iex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
@@ -306,10 +286,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/rb7brady/riptide.git" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_models/Executions" />
       <recent name="C:\Users\rb7_b\WebstormProjects\express-playground\routes\publicAPI\rh\api2" />
@@ -410,12 +393,16 @@
       <workItem from="1543772642794" duration="45280000" />
       <workItem from="1544747989669" duration="62151000" />
       <workItem from="1545682862277" duration="542000" />
-      <workItem from="1545683579846" duration="14335000" />
+      <workItem from="1545683579846" duration="30850000" />
+      <workItem from="1546733545767" duration="275000" />
+      <workItem from="1546733851635" duration="5019000" />
+      <workItem from="1547336206159" duration="1601000" />
+      <workItem from="1515008744932" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144329000" />
+    <option name="totallyTimeSpent" value="167779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,49 +414,48 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.17195208" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.14647378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5006135" side_tool="true" weight="0.17217484" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.42873564" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.39215687" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.30809128" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39885056" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329849" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.28235295" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2821577" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" side_tool="true" weight="0.2238806" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.17195208" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.14647378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5006135" side_tool="true" weight="0.17217484" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.42873564" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.39215687" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41701245" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39885056" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32998884" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329849" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.28275862" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2821577" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -490,24 +476,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/error.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="457" selection-start-line="457" selection-end-line="457" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modularTest" />
     <entry file="file://$PROJECT_DIR$/services/db/rtdb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -546,13 +514,6 @@
     <entry file="file://$PROJECT_DIR$/services/rest/rh/rh.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/companies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
@@ -570,31 +531,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modularTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="24" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/iex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -614,20 +554,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/testQUery" />
-    <entry file="file://$PROJECT_DIR$/routes/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/riptide/riptideRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -659,20 +585,6 @@
     <entry file="file://$PROJECT_DIR$/_models/options.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="31" column="34" selection-start-line="31" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_helpers/sqlUtil.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -686,9 +598,6 @@
           <caret line="62" column="18" selection-end-line="78" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers/_converters/OptionOrder/optionOrder">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_models/OrderOption.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -728,55 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Executions/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Executions/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_models/Legs/converter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -784,10 +644,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/leg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://github.com/rb7brady/riptide.git">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_helpers/_converters/OptionOrder/optionOrder">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/riptide/riptideRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/Executions/rtdb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-end-line="85" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_models/Legs/rtdb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="-161">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/iex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/companies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/Dividends/converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/Dividends/rtdb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/Executions/converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/rtdb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3180">
+          <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/modularTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/dividends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>

@@ -38,7 +38,6 @@ class Converter {
                 }
             }
         });
-
         orderConn.end();
         return myOrder;
     }

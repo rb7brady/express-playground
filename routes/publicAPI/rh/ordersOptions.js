@@ -12,7 +12,7 @@ var router = express.Router();
 var mysql      = require('mysql');
 
 
-router.get('/options', function(req, res, next) {
+router.get('/optionsRefresh', function(req, res, next) {
     console.log('Entering Orders');
     const connection = mysql.createConnection(Connections.getRtdbConfig());
     let myAccount = new Account('rb7brady@gmail.com', '');
@@ -31,6 +31,32 @@ router.get('/options', function(req, res, next) {
             queryOrdersPage('https://api.robinhood.com/options/orders/',options,connection);
             res.send('Complete');
         }
+    })
+});
+
+router.get('/options', function(req, res, next) {
+    console.log('Entering Orders');
+    const connection = mysql.createConnection(Connections.getRtdbConfig());
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Origin', '*');    connection.connect();
+    connection.query('SELECT \n' +
+        'oo.symbol,\n' +
+        'oo.premium,\n' +
+        'oo.price,\n' +
+        'oo.processed_premium,\n' +
+        'oo.created_at,\n' +
+        'oo.opening_strategy,\n' +
+        'oo.closing_strategy\n' +
+        'FROM order_option_robinhood oo \n' +
+        'LEFT OUTER JOIN\n' +
+        'leg ON oo.id = leg.ooid\n' +
+        'LEFT OUTER JOIN\n' +
+        'execution exec ON exec.leg_id = leg.id\n' +
+        'ORDER BY _option,created_at;', function (error, results) {
+
+        res.send(results);
+
     })
 });
 

@@ -213,7 +213,6 @@ class OrderOption
             i++;
             columns += this[name].meta.name;
             if (this[name].meta.type === 'varchar') {
-                3
                 values += sqlUtil.appendStringValue(this[name].value)
             } else if (this[name].meta.type === 'binary') {
                 values += sqlUtil.appendHexID(this[name].value)
