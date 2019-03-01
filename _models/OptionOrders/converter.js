@@ -1,7 +1,6 @@
 var OrderOption = require('./rtdb')
 var LegConverter = require('../Legs/converter');
-var Connections = require('../Connection');
-var mysql      = require('mysql');
+var rtdbPool = require('../../_helpers/rtdbPool').pool;
 
 class Converter {
     static convertToDb(result) {
@@ -28,17 +27,23 @@ class Converter {
         myOrder.setSymbol(result.chain_symbol);
         myOrder.setRef_id(result.ref_id);
 
-        const orderConn = mysql.createConnection(Connections.getRtdbConfig());
-        orderConn.connect();
-        orderConn.query(myOrder.buildInsertQuery(), function (error, response) {
-            if (!error && response.insertId) {
-                for (var j = 0; j < result.legs.length; j++) {
-                    console.log('inserting leg for order - ' + response.insertId + 'leg ' + j + ' of ' + result.legs.length);
-                    LegConverter.convertToDb(result.legs[j], response.insertId);
+        //const orderConn = mysql.createConnection(Connections.getRtdbConfig());
+        //orderConn.connect();
+        rtdbPool.getConnection(function(err,conn){
+            conn.query(myOrder.buildInsertQuery(), function (error, response) {
+                if (error) {console.log(error.toString());}
+                if (!error && response.insertId) {
+                    if (result.legs != null && result.legs.length > 0) {
+                        for (var j = 0; j < result.legs.length; j++) {
+                            LegConverter.convertToDb(result.legs[j], response.insertId);
+                        }
+                    }
                 }
-            }
+            });
+            conn.release();
+
         });
-        orderConn.end();
+       // orderConn.end();
         return myOrder;
     }
 }

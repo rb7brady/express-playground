@@ -1,7 +1,7 @@
 var Leg = require('./rtdb');
 var Connections = require('../Connection');
 var ExecutionConverter = require('../Executions/converter');
-var mysql      = require('mysql');
+var rtdbPool = require('../../_helpers/rtdbPool').pool;
 
 class Converter {
 
@@ -14,18 +14,22 @@ class Converter {
         myLeg.setRatio_quantity(leg.ratio_quantity);
         myLeg.setRh_id(leg.id);
 
-        const legConn = mysql.createConnection(Connections.getRtdbConfig());
-        legConn.connect();
-        legConn.query(myLeg.buildInsertQuery(), function (error, response) {
-            if (error) {console.log("[ERROR]");}
-            if (!error && response.insertId) {
-                for (var j = 0; j < leg.executions.length; j++) {
-                    console.log('inserting execution for leg - ' + response.insertId + 'exec ' + j + ' of ' + leg.executions.length);
-                    ExecutionConverter.convertToDb(leg.executions[j], response.insertId);
+        rtdbPool.getConnection(function(err,conn) {
+            conn.query(myLeg.buildInsertQuery(), function (error, response) {
+                if (error) {
+                    console.log(error.toString());
                 }
-            }
+                if (!error && response.insertId) {
+                    if (leg.executions != null && leg.executions.length > 0) {
+                        for (var k = 0; k < leg.executions.length; k++) {
+                            //console.log('inserting execution for leg - ' + response.insertId + 'exec ' + j + ' of ' + leg.executions.length);
+                            ExecutionConverter.convertToDb(leg.executions[k], response.insertId);
+                        }
+                    }
+                }
+            });
+            conn.release();
         });
-        legConn.end();
         return myLeg;
     }
 }

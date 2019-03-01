@@ -6,12 +6,6 @@ class RTDBConnector {
         this.database = d;
     }
     getConfig() {
-        return {
-            host: this.host,
-            user:this.user,
-            password:this.password,
-            database:this.database
-        }
     }
 }
 function getRtdbConfig() {

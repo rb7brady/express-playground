@@ -9,6 +9,7 @@ router.get('/all/top', function(req, res, next) {
         host:"rtdb002.cppjlghnvwmg.us-east-2.rds.amazonaws.com",
         user:"rtdb",
         password:"Riptide99!",
+
         database:"rtdb"
     });
 

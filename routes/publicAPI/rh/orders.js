@@ -24,37 +24,43 @@ router.get('/orders', function(req, res, next) {
                         authorization: 'Bearer ' + myAccount.getToken()
                     }
             };
-            queryOrdersPage('https://api.robinhood.com/orders/',options,connection);
+            connection.end();
+
+            queryOrdersPage('https://api.robinhood.com/orders/',options);
             res.send('Complete');
         }
-    })
+    });
 });
 
-function queryOrdersPage(url,options,connection) {
+function queryOrdersPage(url,options) {
+
     request(url, options, function (error, response, body) {
         if (!error) {
             let orders = JSON.parse(body);
             if (orders.results) {
                 for (i = 0; i < orders.results.length; i++) { //loop through order page.
-                    let myOrder = OrderConverter(orders.results[i]);
-                    request(orders.results[i].instrument, options, function (error, response, body) {//fetch instrument data.
-                        if (!error) {
-                            let json = JSON.parse(body);
-                            myOrder.setSymbol(json.symbol);
-                            connection.query(myOrder.buildInsertQuery(), function (error) { //perform insert.
-                                if (error) {console.log('[ERROR] '+ error.sqlMessage);} //Error handling on INSERT.
-                            });
-                        }
-                    });
+                    //let myOrder = OrderConverter(orders.results[i]);
+                    OrderConverter.convertToDb(orders.results[i]);
+                    // request(orders.results[i].instrument, options, function (error, response, body) {//fetch instrument data.
+                    //     if (!error) {
+                    //         let json = JSON.parse(body);
+                    //         //myOrder.setSymbol(json.symbol);
+                    //         OrderConverter.convertToDb(orders.results[i]);
+                    //         connection.query(myOrder.buildInsertQuery(), function (error) { //perform insert.
+                    //             if (error) {console.log('[ERROR] '+ error.sqlMessage);} //Error handling on INSERT.
+                    //         });
+                    //     }
+                    // });
                 }
                 if (orders.results.length === 100) {
-                    queryOrdersPage(orders.next, options, connection);
+                    queryOrdersPage(orders.next, options);
                 }
             }
         } else {
             console.log('ERROR');
         }
-    })
+    });
+
 }
 
 

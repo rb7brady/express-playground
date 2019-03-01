@@ -1,7 +1,7 @@
 var Dividend = require('./rtdb');
 var rtdbPool = require('../../_helpers/rtdbPool').pool;
 
-G
+
 class Converter {
     static convertToDb(dividend, parentId) {
         let myDividend = new Dividend();

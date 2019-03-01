@@ -2,11 +2,11 @@
 var express = require('express');
 var mysql      = require('mysql');
 var config = require('../../config');
-var request = require('request');
-var iex = require('../../services/rest/iex');
-var lookup = require('../../services/db/lookup');
-var connector = require('../../services/db/rtdbConnector');
-const getCompanies = require("../../services/db/lookup").getCompanies;
+//var request = require('request');
+//var iex = require('../../services/rest/iex');
+//var lookup = require('../../services/db/lookup');
+//var connector = require('../../services/db/rtdbConnector');
+//const getCompanies = require("../../services/db/lookup").getCompanies;
 
 //
 // var pool      =    mysql.createPool({

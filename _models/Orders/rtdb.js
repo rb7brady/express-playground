@@ -115,7 +115,7 @@ class Order {
             }
     }
     setExtended_hours(value){
-        this.extended_hours=
+this.extended_hours=
             {
                 value:value,
                 meta: new mysqlColumn("extended_hours","tinyint","NULL","3","0")
@@ -139,6 +139,7 @@ class Order {
         var query = 'INSERT INTO order_robinhood ';
         var values = 'VALUES (';
         var columns = '(';
+        const dupeKey = 'ON DUPLICATE KEY UPDATE id=id';
         var i = 0;
         for(var name in this) {
             i++;
@@ -157,7 +158,8 @@ class Order {
         }
         values += ' ) ';
         columns += ' ) ';
-        return query + columns+ values;
+
+        return query + columns + values + dupeKey;
     }
 }
 module.exports = Order;
