@@ -44,17 +44,17 @@ router.get('/options', function(req, res, next) {
         'oo.symbol,\n' +
         'oo.premium,\n' +
         'oo.price,\n' +
-        'oo.processed_premium,\n' +
+        // 'oo.processed_premium,\n' +
         'oo.created_at,\n' +
-        'oo.opening_strategy,\n' +
-        'oo.closing_strategy\n' +
+        'oo.opening_strategy\n' +
+        // 'oo.closing_strategy\n' +
         'FROM order_option_robinhood oo \n' +
         'LEFT OUTER JOIN\n' +
         'leg ON oo.id = leg.ooid\n' +
         'LEFT OUTER JOIN\n' +
         'execution exec ON exec.leg_id = leg.id\n' +
         'ORDER BY _option,created_at;', function (error, results) {
-
+        console.log(results);
         res.send(results);
 
     })

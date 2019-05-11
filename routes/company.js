@@ -2,6 +2,7 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 var mysql      = require('mysql');
+var Connections = require('../_models/Connection');
 
 const SELECT_PREFIX = "SELECT * FROM company WHERE SYMBOL LIKE ";
 const SELECT_PREFIX_ID = "SELECT * FROM company WHERE ID = ";
@@ -31,48 +32,35 @@ router.get('/test/json', function(req, res, next) {
 
     connection.end();
 });
+const connection = mysql.createConnection(Connections.getRtdbConfig());
 
 
 /* GET company listing. */
 router.get('/search/:symbol', function(req, res, next) {
-
-    var connection = mysql.createConnection({
-        host: "rtdb002.cppjlghnvwmg.us-east-2.rds.amazonaws.com",
-        user: "rtdb",
-        password: "Riptide99!",
-        database: "rtdb"
-    });
     console.log(req.params);
-    connection.connect();
     connection.query(SELECT_PREFIX + "\"%" + req.params.symbol + "%\"",  function(error, results, fields) {
-        queryCallback(error, results);
+        queryCallback(error, results, res, req);
     });
 });
 
-function queryCallback(error, results) {
-    var resultsFound = false;
-
+function queryCallback(error, results, res, req) {
     if (results.length > 0) {
-        resultsFound = true;
         res.send(results);
-    } else if (!resultsFound) {
+    } else {
         request('https://api.iextrading.com/1.0/stock/' + req.params.symbol + '/company', function (error, response, body) {
-            console.log('error:', error); // Print the error if one occurred and handle it
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             if (!error) {
                 var json = JSON.parse(body);
                 var iCompanyJsonModel = {};
                 iCompanyJsonModel.name = json['companyName'];
                 iCompanyJsonModel.symbol = json['symbol'];
-
                 connection.query("INSERT INTO company (symbol, name) values (\"" + json['symbol'] + "\",\"" + json['companyName'] + "\")", function (error, results, fields) {
-                    if (error) {
-                        console.log(error);
-                    }
-
+                    if (error) {console.log(error);}
                 });
                 console.log(json['companyName']);
                 res.send([JSON.stringify(iCompanyJsonModel)]);
+            } else {
+                console.log('error:', error); // Print the error if one occurred and handle it
             }
         });
     }
@@ -80,14 +68,7 @@ function queryCallback(error, results) {
 
 
 router.get('/:id', function(req, res, next) {
-    var connection = mysql.createConnection({
-        host:"rtdb002.cppjlghnvwmg.us-east-2.rds.amazonaws.com",
-        user:"rtdb",
-        password:"Riptide99!",
-        database:"rtdb"
-    });
     console.log(req.params);
-    connection.connect();
     connection.query(SELECT_PREFIX_ID + "\"" + req.params.id + "\"", function (error, results, fields) {
         if (error) {console.log(error);}
         res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
@@ -95,7 +76,6 @@ router.get('/:id', function(req, res, next) {
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.send(results[0]);
     });
-    connection.end();
 });
 
 
