@@ -18,6 +18,8 @@ var rhExpressRouter = require('./routes/publicAPI/rh/authExpress');
 var ordersRoute = require('./routes/publicAPI/rh/orders');
 var ordersOptionsRoute = require('./routes/publicAPI/rh/ordersOptions');
 var divRouter = require('./routes/publicAPI/iex/dividends');
+var smiteRouter = require('./routes/publicAPI/smite/test');
+
 const cors = require('cors');
 
 var app = express();
@@ -45,6 +47,11 @@ app.use('/publicAPI/iex/dividend', divRouter);
 
 //app.use('/publicAPI/rh/authenticate', rhAuthRouter);
 app.use('/publicAPI/rh/authExpress', rhExpressRouter);
+
+
+//----SMITE-----
+app.use('/publicAPI/smite/test', smiteRouter);
+
 
 app.use('/mod', modRouter);
 app.use('/rt',riptideRouter);

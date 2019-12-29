@@ -1,0 +1,18 @@
+
+BASE_URL = "http://api.smitegame.com/smiteapi.svc/";
+END_POINT = {
+    GETGODS: "getgods",
+    CREATESESSION: "createsession"
+
+};
+
+RESPONSE_TYPE = {
+    JSON:"json",
+    XML:"xml"
+};
+
+LANGUAGE_CODE = {
+    US: "1"
+};
+
+module.exports = {END_POINT,RESPONSE_TYPE,BASE_URL,LANGUAGE_CODE};

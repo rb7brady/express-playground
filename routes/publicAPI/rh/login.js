@@ -4,7 +4,7 @@ var Robinhood = require('../../../_helpers/robinhood')(
         password : ''
     }, (data) => {
         if (data && data.mfa_required) {
-            var
+            //var
         }
     }
 )

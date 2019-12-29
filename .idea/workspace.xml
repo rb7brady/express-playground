@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd95c5ed-8e52-4b50-ae53-0533919318db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/publicAPI/rh/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_helpers/_constants/smite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_helpers/_metadata/smite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/publicAPI/smite/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/companies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/company.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/publicAPI/iex/company.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/iex/company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/login.js" afterDir="false" />
     </list>
-    <list id="15137698-2298-423b-85bc-0fc4782aa27c" name="Auth" comment="">
-      <change afterPath="$PROJECT_DIR$/_helpers/robinhood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list id="15137698-2298-423b-85bc-0fc4782aa27c" name="Auth" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,96 +19,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="express-playground" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/rh.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/company.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="41" column="21" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/db/lookup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/riptide/riptideRouter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-794">
-              <caret line="74" column="20" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_helpers/sqlUtil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_helpers/robinhood.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="159" column="15" lean-forward="true" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_helpers/_converters/OptionOrder/optionOrder">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_models/Connection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,187 +45,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/routes/modularTest" />
-        <option value="$PROJECT_DIR$/services/rest/iex.js" />
-        <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/services/db/rtdbPool.js" />
-        <option value="$PROJECT_DIR$/services/db/rtdb.js" />
-        <option value="$PROJECT_DIR$/services/db/rtdbConnector.js" />
-        <option value="$PROJECT_DIR$/services/db/lookup.js" />
-        <option value="$PROJECT_DIR$/routes/riptide/riptideRouter.js" />
-        <option value="$PROJECT_DIR$/services/rest/rh.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" />
-        <option value="$PROJECT_DIR$/robinhoodTesting.http" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/rh.js" />
-        <option value="$PROJECT_DIR$/routes/iex.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/authenticate.js" />
-        <option value="$PROJECT_DIR$/routes/modularTest.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/api/orders.js" />
-        <option value="$PROJECT_DIR$/_models/Account.js" />
-        <option value="$PROJECT_DIR$/_models/Connection.js" />
-        <option value="$PROJECT_DIR$/_models/options.js" />
-        <option value="$PROJECT_DIR$/_helpers.js" />
-        <option value="$PROJECT_DIR$/_helpers/sqlUtil.js" />
-        <option value="$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js" />
-        <option value="$PROJECT_DIR$/_models/Order.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/leg.js" />
-        <option value="$PROJECT_DIR$/_models/Leg.js" />
-        <option value="$PROJECT_DIR$/_models/OrderOption.js" />
-        <option value="$PROJECT_DIR$/_models/OptionOrders/converter" />
-        <option value="$PROJECT_DIR$/_models/Legs/rtdb.js" />
-        <option value="$PROJECT_DIR$/_models/Orders/rtdb.js" />
-        <option value="$PROJECT_DIR$/_models/Orders/converter.js" />
-        <option value="$PROJECT_DIR$/_models/Executions/rtdb.js" />
-        <option value="$PROJECT_DIR$/_models/Executions/converter.js" />
-        <option value="$PROJECT_DIR$/_models/Legs/converter.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/orders.js" />
-        <option value="$PROJECT_DIR$/_models/OptionOrders/converter.js" />
-        <option value="$PROJECT_DIR$/_models/OptionOrders/rtdb.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/_models/Dividends/converter.js" />
-        <option value="$PROJECT_DIR$/_models/Dividends/rtdb.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/iex/dividends.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/iex/company.js" />
-        <option value="$PROJECT_DIR$/_helpers/robinhood.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/login.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js" />
-        <option value="$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js" />
-        <option value="$PROJECT_DIR$/routes/company.js" />
-        <option value="$PROJECT_DIR$/routes/companies.js" />
-      </list>
-    </option>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
+  <component name="ProjectId" id="1VclL9SYYWP8ZsdNv7DLLZ2q9LN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_helpers" type="462c0819:PsiDirectoryNode" />
-              <item name="_converters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_helpers" type="462c0819:PsiDirectoryNode" />
-              <item name="_converters" type="462c0819:PsiDirectoryNode" />
-              <item name="OptionOrder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_helpers" type="462c0819:PsiDirectoryNode" />
-              <item name="_metadata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="publicAPI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="publicAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="iex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="publicAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="rh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="riptide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="rh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-playground" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Public/Downloads" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -388,18 +134,6 @@
       </list>
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Node.js.bin\www">
     <configuration name="rest-api_2#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http">
       <method v="2" />
@@ -413,6 +147,18 @@
         <item itemvalue="HTTP Request.rest-api_2#1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -442,11 +188,10 @@
       <workItem from="1555988372285" duration="300000" />
       <workItem from="1556395523903" duration="442000" />
       <workItem from="1557098531153" duration="6059000" />
+      <workItem from="1577560210481" duration="8112000" />
+      <workItem from="1577600983082" duration="879000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180824000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,55 +201,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.12477396" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" sideWeight="0.5006135" side_tool="true" weight="0.17217484" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.42873564" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32987553" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.28630707" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39885056" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32998884" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32883817" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.27282158" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" side_tool="true" weight="0.2238806" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993865" visible="true" weight="0.14647378" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" sideWeight="0.5006135" side_tool="true" weight="0.17217484" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.42873564" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41701245" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39885056" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32998884" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.2821577" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" side_tool="true" weight="0.2238806" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -519,317 +215,42 @@
       </list>
     </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
-    <entry file="file://$PROJECT_DIR$/robinhoodTesting.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/testQUery" />
-    <entry file="file://$PROJECT_DIR$/_models/Account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/options.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="62" column="18" selection-end-line="78" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/OrderOption.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3013">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Orders/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="137" column="24" lean-forward="true" selection-end-line="162" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Orders/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Legs/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="https://github.com/rb7brady/riptide.git">
-      <provider selected="true" editor-type-id="httpFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Executions/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-end-line="85" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Legs/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Dividends/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Dividends/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Executions/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/rtdb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="212" column="16" lean-forward="true" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/OptionOrders/converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/db/rtdbConnector.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/rest/rh/rh.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/rest/iex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/authenticate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="79" column="3" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/ordersOptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/companies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/iex/dividends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/iex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/modularTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/rh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/db/lookup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/riptide/riptideRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-794">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers/sqlUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers/_metadata/mysqlColumn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers/_converters/OptionOrder/optionOrder">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_models/Connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/publicAPI/rh/authExpress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers/robinhood.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="159" column="15" lean-forward="true" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577560235183">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1577560235183" />
+    <state x="605" y="381" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577563024801">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="605" y="381" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1577563024801" />
+    <state width="1358" height="673" key="GridCell.Tab.0.bottom" timestamp="1577572957089">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1358" height="673" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1577572957089" />
+    <state width="1358" height="673" key="GridCell.Tab.0.center" timestamp="1577572957089">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1358" height="673" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1577572957089" />
+    <state width="1358" height="673" key="GridCell.Tab.0.left" timestamp="1577572957089">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1358" height="673" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1577572957089" />
+    <state width="1358" height="673" key="GridCell.Tab.0.right" timestamp="1577572957089">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1358" height="673" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1577572957089" />
+    <state x="397" y="210" key="SettingsEditor" timestamp="1577560414286">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1577560414286" />
+    <state x="573" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1577601013202">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="573" y="403" key="com.intellij.ide.util.TipDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1577601013202" />
+    <state x="620" y="386" key="jetbrains.nodejs.interpreters-dialog" timestamp="1577560225765">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="620" y="386" key="jetbrains.nodejs.interpreters-dialog/0.23.1792.1097@0.23.1792.1097" timestamp="1577560225765" />
   </component>
 </project>
