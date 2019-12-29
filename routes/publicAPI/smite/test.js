@@ -11,7 +11,7 @@ router.get('/session', session);
 var godNames = {
     names:[
         "Nu Wa",
-    "Aphrodite",
+        "Aphrodite",
         "Artio"
     ]
 };
@@ -19,14 +19,52 @@ var godNames = {
 var devID = "1420";
 var authKey = "4F3F3D6041D24489AFB1AD5DB443E7E2";
 var sessionId = "B0542222BC5A4CF5B41AED50AD9280FD";
+var sessionTimestamp;
 var UTCDate = moment.utc().format('YYYYMMDDHHmmss');
 
-function gods(req,res) {
-    console.log(godNames.names[1]);
-    console.log('entering gods');
-    var signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
+var signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
+var url = constants.BASE_URL +
+    constants.END_POINT.CREATESESSION +
+    constants.RESPONSE_TYPE.JSON + "/" +
+    devID +"/"+
+    signature +"/"+
+    UTCDate;
 
-    var url = constants.BASE_URL +
+function gods(req,res) {
+    console.log("Invoking Smite API getgods Method: " +
+        "\n-sessionId: " + sessionId +
+        "\n-sessionTimestamp: " + sessionTimestamp);
+
+    if(checkSessionExpired(sessionTimestamp)) {
+        //sessionTimestamp = moment.utc("20191222180302", "YYYYMMDDHHmmss");
+            //moment.utc().format('YYYYMMDDHHmmss');
+        console.log("session expired, creating new one.");
+        url = constants.BASE_URL +
+            constants.END_POINT.CREATESESSION +
+            constants.RESPONSE_TYPE.JSON + "/" +
+            devID +"/"+
+            signature +"/"+
+            UTCDate;
+        signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
+        request(url, options,
+            function (error, response, body) {
+                if (!error) {
+                    let session = JSON.parse(body);
+                    console.log(session.timestamp.toString());
+                    sessionId = session.session_id;
+                    sessionTimestamp = moment(session.timestamp.toString(), 'MM/DD/YYYY hh:mm:ss a').add(15, "minutes");
+                    console.log(sessionTimestamp.isAfter(moment.utc()));
+                    console.log("New Session ID: " + sessionId);
+                    console.log("New Session Expiration: " + sessionTimestamp);
+                } else {
+                    console.log('ERROR');
+                }
+            });
+
+    }
+
+     signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
+     url = constants.BASE_URL +
         constants.END_POINT.GETGODS +
         constants.RESPONSE_TYPE.JSON + "/" +
         devID +"/"+
@@ -45,7 +83,7 @@ function gods(req,res) {
     request(url, options,
         function (error, response, body) {
             if (!error) {
-                console.log(body)
+                console.log(body);
                 let gods = JSON.parse(body);
                 console.log('Number of gods: ' + gods.length);
                 var output = "";
@@ -64,7 +102,18 @@ function gods(req,res) {
                 console.log(output);
                 res.send(output);
             }
-        });h
+        });
+}
+
+function checkSessionExpired() {
+    console.log("+entering checkSessionExpired." );
+    if (sessionTimestamp != null) {
+        if (sessionTimestamp.isAfter(moment.utc())) {
+            console.log("+Session not expired.");
+            return false;
+        }
+    }
+    return true;
 }
 
 function createAbilityString(ability) {
@@ -84,7 +133,7 @@ function session(req,res, next) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Origin', '*');
-    console.log('Entering SMITE');
+    console.log('Entering session');
 
     var signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
     var url = constants.BASE_URL +
@@ -103,9 +152,15 @@ function session(req,res, next) {
         function (error, response, body) {
         if (!error) {
             let session = JSON.parse(body);
-            console.log(session.session_id);
+            sessionId = session.session_id;
+            sessionTimestamp = session.timestamp.toString();
+            console.log("new session id: " + sessionId);
+            console.log("expires 15 minutes after: " + sessionTimestamp);
         } else {
             console.log('ERROR');
+        }
+        if (res != null) {
+            res.send();
         }
     });
 }
