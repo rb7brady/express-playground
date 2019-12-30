@@ -83,9 +83,9 @@ function gods(req,res) {
     request(url, options,
         function (error, response, body) {
             if (!error) {
-                console.log(body);
+                //console.log(body);
                 let gods = JSON.parse(body);
-                console.log('Number of gods: ' + gods.length);
+                //console.log('Number of gods: ' + gods.length);
                 var output = "";
                 for (i = 0; i<gods.length; i++) {
                     for (j = 0; j < godNames.names.length; j++) {
@@ -99,7 +99,7 @@ function gods(req,res) {
                         }
                     }
                 }
-                console.log(output);
+                //console.log(output);
                 res.send(output);
             }
         });
