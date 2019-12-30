@@ -33,6 +33,7 @@ var url = constants.BASE_URL +
     UTCDate;
 
 function gods(req,res) {
+    UTCDate = moment.utc().format('YYYYMMDDHHmmss');
     console.log("Invoking Smite API getgods Method: " +
         "\n-sessionId: " + sessionId +
         "\n-sessionTimestamp: " + sessionTimestamp);
