@@ -33,7 +33,6 @@ var url = constants.BASE_URL +
     UTCDate;
 
 function gods(req,res) {
-    UTCDate = moment.utc().format('YYYYMMDDHHmmss');
     console.log("Invoking Smite API getgods Method: " +
         "\n-sessionId: " + sessionId +
         "\n-sessionTimestamp: " + sessionTimestamp);
@@ -44,6 +43,7 @@ function gods(req,res) {
         //sessionTimestamp = moment.utc("20191222180302", "YYYYMMDDHHmmss");
             //moment.utc().format('YYYYMMDDHHmmss');
         console.log("session expired, creating new one.");
+        UTCDate = moment.utc().format('YYYYMMDDHHmmss');
         url = constants.BASE_URL +
             constants.END_POINT.CREATESESSION +
             constants.RESPONSE_TYPE.JSON + "/" +
@@ -68,7 +68,9 @@ function gods(req,res) {
 
     }
 
-     signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
+    UTCDate = moment.utc().format('YYYYMMDDHHmmss');
+
+    signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
      url = constants.BASE_URL +
         constants.END_POINT.GETGODS +
         constants.RESPONSE_TYPE.JSON + "/" +
