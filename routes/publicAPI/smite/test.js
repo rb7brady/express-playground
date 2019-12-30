@@ -22,17 +22,17 @@ var devID = "1420";
 var authKey = "4F3F3D6041D24489AFB1AD5DB443E7E2";
 var sessionId = "B0542222BC5A4CF5B41AED50AD9280FD";
 var sessionTimestamp;
-var UTCDate = moment.utc().format('YYYYMMDDHHmmss');
-
-var signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
-var url = constants.BASE_URL +
-    constants.END_POINT.CREATESESSION +
-    constants.RESPONSE_TYPE.JSON + "/" +
-    devID +"/"+
-    signature +"/"+
-    UTCDate;
 
 function gods(req,res) {
+    var UTCDate = moment.utc().format('YYYYMMDDHHmmss');
+    var signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
+
+    var url = constants.BASE_URL +
+        constants.END_POINT.CREATESESSION +
+        constants.RESPONSE_TYPE.JSON + "/" +
+        devID +"/"+
+        signature +"/"+
+        UTCDate;
     console.log("Invoking Smite API getgods Method: " +
         "\n-sessionId: " + sessionId +
         "\n-sessionTimestamp: " + sessionTimestamp);
@@ -43,14 +43,7 @@ function gods(req,res) {
         //sessionTimestamp = moment.utc("20191222180302", "YYYYMMDDHHmmss");
             //moment.utc().format('YYYYMMDDHHmmss');
         console.log("session expired, creating new one.");
-        UTCDate = moment.utc().format('YYYYMMDDHHmmss');
-        url = constants.BASE_URL +
-            constants.END_POINT.CREATESESSION +
-            constants.RESPONSE_TYPE.JSON + "/" +
-            devID +"/"+
-            signature +"/"+
-            UTCDate;
-        signature = md5(devID+constants.END_POINT.CREATESESSION+authKey+UTCDate);
+
         request(url, options,
             function (error, response, body) {
                 if (!error) {
