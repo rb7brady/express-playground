@@ -6,6 +6,8 @@ var moment = require('moment');
 var constants = require('../../../_helpers/_constants/smite');
 
 router.get('/gods', gods);
+router.get('/gods/:godNames', gods);
+
 router.get('/session', session);
 
 var godNames = {
@@ -34,7 +36,9 @@ function gods(req,res) {
     console.log("Invoking Smite API getgods Method: " +
         "\n-sessionId: " + sessionId +
         "\n-sessionTimestamp: " + sessionTimestamp);
-
+    console.log("Query Params: " + req.params);
+    console.log("Query Params: " + req.params.godNames);
+    godNames.names = req.params.godNames.split(',');
     if(checkSessionExpired(sessionTimestamp)) {
         //sessionTimestamp = moment.utc("20191222180302", "YYYYMMDDHHmmss");
             //moment.utc().format('YYYYMMDDHHmmss');
