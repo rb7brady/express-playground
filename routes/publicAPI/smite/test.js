@@ -22,8 +22,7 @@ var authKey = "4F3F3D6041D24489AFB1AD5DB443E7E2";
 var sessionId = "B0542222BC5A4CF5B41AED50AD9280FD";
 var sessionTimestamp;
 
-router.get('/gods', gods);
-router.get('/session', session);
+router.get('/session', requestSessionHandler);
 router.get('/gods/:godNames', requestSessionHandler, function (req,res) {
     godNames.names = req.params.godNames.split(',');
     var endpoint = constants.BASE_URL + constants.END_POINT.GETGODS + constants.RESPONSE_TYPE.JSON;
@@ -35,10 +34,7 @@ function requestHandler(req, res, endpoint, callback) {
     var signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
     var url = endpoint + "/" + devID +"/"+ signature +"/"+ sessionId + "/" + UTCDate + "/" + constants.LANGUAGE_CODE.US;
     request(url, function (error, response, body) {
-        if (!error) {
-            console.log(body);
-            callback(body);
-        }
+        if (!error) {callback(body);}
     });
 }
 
@@ -55,9 +51,7 @@ function requestSessionHandler(req, res, next) {
                 next();
             }
         });
-    } else {
-        next();
-    }
+    } else {next();}
 }
 
 function formatGodsList(res,body) {
