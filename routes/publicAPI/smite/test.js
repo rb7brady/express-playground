@@ -30,15 +30,21 @@ router.get('/gods/:godNames', requestSessionHandler, function (req,res) {
 });
 
 function requestHandler(req, res, endpoint, callback) {
+    console.log("Invoking Smite API Call.... [Open Session ID: " + sessionId + " expires at: " + sessionTimestamp+"]");
+
     var UTCDate = moment.utc().format('YYYYMMDDHHmmss');
     var signature = md5(devID+constants.END_POINT.GETGODS+authKey+UTCDate);
     var url = endpoint + "/" + devID +"/"+ signature +"/"+ sessionId + "/" + UTCDate + "/" + constants.LANGUAGE_CODE.US;
     request(url, function (error, response, body) {
-        if (!error) {callback(body);}
+        if (!error) {
+            console.log("Successfully contacted Smite servers.");
+            callback(body);
+        }
     });
 }
 
 function requestSessionHandler(req, res, next) {
+    console.log("Request Received. Checking Session... Open Session ID: " + sessionId + " expires at: " + sessionTimestamp);
     if (checkSessionExpired(sessionTimestamp)) {
         var UTCDate = moment.utc().format('YYYYMMDDHHmmss');
         var signature = md5(devID + constants.END_POINT.CREATESESSION + authKey + UTCDate);
@@ -57,6 +63,7 @@ function requestSessionHandler(req, res, next) {
 function formatGodsList(res,body) {
     var table  = "<table style=\"width:100%\">";
     let jsonBody = JSON.parse(body);
+    console.log("Server response JSON Length: " + jsonBody.length);
     var output = "";
     for (i = 0; i<jsonBody.length; i++) {
         for (j = 0; j < godNames.names.length; j++) {

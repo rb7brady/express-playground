@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd95c5ed-8e52-4b50-ae53-0533919318db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/publicAPI/smite/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/publicAPI/smite/test.js" afterDir="false" />
     </list>
     <list id="15137698-2298-423b-85bc-0fc4782aa27c" name="Auth" comment="" />
@@ -183,7 +184,7 @@
       <workItem from="1557098531153" duration="6059000" />
       <workItem from="1577560210481" duration="8112000" />
       <workItem from="1577600983082" duration="11038000" />
-      <workItem from="1577911380182" duration="7513000" />
+      <workItem from="1577911380182" duration="8922000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic integration with smite api">
       <created>1577657925416</created>
@@ -241,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577918724489</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Removing invalid method calls.&#10;&#10;Removing console logging.">
+      <created>1577919238640</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577919238640</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -275,7 +283,8 @@
     <MESSAGE value="Remove globally scoped signature vars." />
     <MESSAGE value="Remove unnecessary logging." />
     <MESSAGE value="Reworked methods into call back functions to force session id refresh to occur before anything else.&#10;&#10;Hardcoded output as HTML." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reworked methods into call back functions to force session id refresh to occur before anything else.&#10;&#10;Hardcoded output as HTML." />
+    <MESSAGE value="Removing invalid method calls.&#10;&#10;Removing console logging." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing invalid method calls.&#10;&#10;Removing console logging." />
   </component>
   <component name="WindowStateProjectService">
     <state x="386" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577658882286">
@@ -287,10 +296,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="605" y="381" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1577563024801" />
-    <state x="276" y="86" key="CommitChangelistDialog2" timestamp="1577918724292">
+    <state x="276" y="86" key="CommitChangelistDialog2" timestamp="1577919238466">
       <screen x="0" y="23" width="1536" height="937" />
     </state>
-    <state x="276" y="86" key="CommitChangelistDialog2/0.23.1536.937@0.23.1536.937" timestamp="1577918724292" />
+    <state x="276" y="86" key="CommitChangelistDialog2/0.23.1536.937@0.23.1536.937" timestamp="1577919238466" />
     <state x="345" y="94" key="CommitChangelistDialog2/0.23.1920.1057/-1440.23.1440.877@0.23.1920.1057" timestamp="1577668136525" />
     <state width="1494" height="142" key="GridCell.Tab.0.bottom" timestamp="1577919187662">
       <screen x="0" y="23" width="1536" height="937" />
@@ -320,10 +329,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1577560414286" />
-    <state x="267" y="207" key="Vcs.Push.Dialog.v2" timestamp="1577918726537">
+    <state x="267" y="207" key="Vcs.Push.Dialog.v2" timestamp="1577919246642">
       <screen x="0" y="23" width="1536" height="937" />
     </state>
-    <state x="267" y="207" key="Vcs.Push.Dialog.v2/0.23.1536.937@0.23.1536.937" timestamp="1577918726537" />
+    <state x="267" y="207" key="Vcs.Push.Dialog.v2/0.23.1536.937@0.23.1536.937" timestamp="1577919246642" />
     <state x="334" y="231" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1440.23.1440.877@0.23.1920.1057" timestamp="1577668138580" />
     <state x="491" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1577911380643">
       <screen x="0" y="23" width="1536" height="937" />
